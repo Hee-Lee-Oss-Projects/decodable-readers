@@ -4,7 +4,7 @@
 
 ## Executive summary
 
-`decodable-readers` is an Elyos good-deed project that authors **open, phonics-aligned decodable
+`decodable-readers` is a Hee-Lee Oss good-deed project that authors **open, phonics-aligned decodable
 storybooks** for early reading — short, illustrated texts written so a beginning reader can
 **sound out almost every word** using only the letter–sound correspondences (GPCs) they have
 already been taught, plus a small, pre-taught set of high-frequency "tricky" words. The books are
@@ -22,7 +22,7 @@ published **scope-and-sequence** by a **decodability checker**; a book that does
 its claimed level **does not ship**. This is the project's headline gate.
 
 The work runs in the **donated lane**: a human runs their own coding/writing agent interactively to
-draft a story, illustrations brief, and metadata, then opens a PR; the Elyos CLI only prepares the
+draft a story, illustrations brief, and metadata, then opens a PR; the Hee-Lee Oss CLI only prepares the
 workspace and opens PRs. The project is **low risk tier** overall (original children's fiction over
 controlled vocabulary), but it carries three care obligations that are non-negotiable and are gated
 in CI/review: (1) **decodability correctness** (above); (2) **child-content safeguarding +
@@ -129,7 +129,7 @@ tracked from M0/M1 so progress is visible *before* a partner exists. We explicit
 | Languages covered **end-to-end** (sequence → verified books → used) | 0 | ≥ 2 | Project registry |
 | **Integration with `literacy-from-zero`** (books referenced as its decodable practice tier) | none | linked + used in ≥ 1 lesson flow | Cross-project link + maintainer confirmation |
 | Partner-reported **usefulness** of a delivered set (qualitative) | n/a | Positive from ≥ 1 program | Partner feedback log |
-| **Learner decoding signal** (aspirational, partner-run, observational — *not* an Elyos claim) | n/a | Partner reports learners can decode the set with ≥ 90% word accuracy | Partner's own informal running-record / report |
+| **Learner decoding signal** (aspirational, partner-run, observational — *not* a Hee-Lee Oss claim) | n/a | Partner reports learners can decode the set with ≥ 90% word accuracy | Partner's own informal running-record / report |
 
 **Interim foundation metrics (M0/M1, partner-independent)**
 
@@ -288,7 +288,7 @@ opportunities*.)
 ## Solution approach & architecture
 
 This is primarily a **content/data pipeline** project (deliverables are books + data artifacts) with
-**one focused software component** (the decodability checker + schemas). It rides existing Elyos
+**one focused software component** (the decodability checker + schemas). It rides existing Hee-Lee Oss
 donated-lane mechanics (CLI prepares workspace, human runs agent, PR opened, human/expert review
 gates "done"). Per CLAUDE.md, the checker is **project tooling living in this repo** and is
 **agent-neutral** — no vendor/agent-specific logic; nothing goes into `packages/core`.
@@ -608,7 +608,7 @@ distribution flywheel (see Adjacent opportunities).
 ## Work breakdown
 
 The itemized, sized backlog lives in **[TASKS.md](./TASKS.md)**, organized by the milestones above
-(M0–M3) plus a Backlog/future section. Each task maps to an Elyos Task JSON (schema in
+(M0–M3) plus a Backlog/future section. Each task maps to a Hee-Lee Oss Task JSON (schema in
 `packages/schema/src/schemas.ts`) with id, type, lane, risk tier, deliverable, acceptance criteria,
 and license fields. M0/M1 tasks are partner-independent foundations; M2+ tasks are gated on a secured
 partner / per-language reviewer and are marked `verifiedNeed: false` until then.
@@ -639,7 +639,7 @@ partner / per-language reviewer and are marked `verifiedNeed: false` until then.
 
 ## Dependencies & integrations
 
-- **Elyos donated lane**: `packages/cli` (workspace prep + PR), `packages/core`, `packages/schema`
+- **Hee-Lee Oss donated lane**: `packages/cli` (workspace prep + PR), `packages/core`, `packages/schema`
   (Task JSON + this project's content schemas). No funded-lane / API-key execution.
 - **`literacy-from-zero`** (sibling flagship) — the primary internal consumer/integration target;
   this project supplies its decodable practice tier.
@@ -757,7 +757,7 @@ stays reuse-ready (several are seeded in the Roadmap / Backlog).
 5. **Lexicon seeding.** Use PD CMUdict (English) to *seed* candidate segmentations (all human-
    reviewed), or hand-author from scratch? (Default: seed-then-review for speed, never auto-accept.)
 6. **Effectiveness evidence.** Can a university partner run a small observational study on decoding
-   accuracy/confidence? (Aspirational; not an Elyos-made claim without it.)
+   accuracy/confidence? (Aspirational; not a Hee-Lee Oss-made claim without it.)
 7. **Funded lane?** Project is donated; is there ever a case for metered authoring under escrow for a
    surge of partner-requested levels? (Out of scope for v0.1; would require `fundedBudgetUsd` and the
    same gates + a hard per-task budget cap.)
@@ -785,12 +785,12 @@ stays reuse-ready (several are seeded in the Roadmap / Backlog).
 
 ## References
 
-- `C:\code\elyos\CLAUDE.md` — Elyos work rules, lanes, quality bar, refusal guardrails.
-- `C:\code\elyos\docs\good-deed-definition.md` — good-deed criteria and risk tiers.
-- `C:\code\elyos\packages\schema\src\schemas.ts` — Task JSON schema.
-- `C:\code\elyos\planning\ROADMAP.md` — portfolio roadmap (decodable-readers is a Track 3 candidate;
+- `C:\code\hee-lee-oss\CLAUDE.md` — Hee-Lee Oss work rules, lanes, quality bar, refusal guardrails.
+- `C:\code\hee-lee-oss\docs\good-deed-definition.md` — good-deed criteria and risk tiers.
+- `C:\code\hee-lee-oss\packages\schema\src\schemas.ts` — Task JSON schema.
+- `C:\code\hee-lee-oss\planning\ROADMAP.md` — portfolio roadmap (decodable-readers is a Track 3 candidate;
   `literacy-from-zero` is the flagship it integrates with).
-- `C:\code\elyos\planning\projects\vital-info-translations\PLAN.md` — exemplar for license/provenance
+- `C:\code\hee-lee-oss\planning\projects\vital-info-translations\PLAN.md` — exemplar for license/provenance
   + reviewer-gate rigor.
 - Reading-science / structured-literacy literature on decodable text and scope-and-sequence (to be
   cited per adopted sequence).
@@ -865,7 +865,7 @@ the plan and tasks above (this is not a wish-list — each is reflected in the t
 
 ## Review sign-off
 
-**Reviewed against the PLAN_SPEC robustness bar and Elyos guardrails on 2026-06-28.**
+**Reviewed against the PLAN_SPEC robustness bar and Hee-Lee Oss guardrails on 2026-06-28.**
 
 - **Structure & depth:** all 17 required H2 sections present and in order; depth matches the
   exemplars (Ofelia product-vision clarity + vital-info license/gate rigor). ✔

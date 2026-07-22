@@ -5,9 +5,9 @@
 The backlog for the `decodable-readers` good-deed project. Read alongside [PLAN.md](./PLAN.md).
 Milestones (M0–M3) match the roadmap there.
 
-## How these tasks map to Elyos
+## How these tasks map to Hee-Lee Oss
 
-Each task below becomes an **Elyos Task JSON** validated against `packages/schema/src/schemas.ts`
+Each task below becomes an **Hee-Lee Oss Task JSON** validated against `packages/schema/src/schemas.ts`
 (AJV / JSON Schema draft-07). Field mapping:
 
 - **id** — stable slug id, e.g. `decodable-readers-checker-001` (table column `ID`).
@@ -248,7 +248,7 @@ Goal: scale languages/levels with sustained quality and tracked outcomes.
 `outcomes-001`
 - A maintained log capturing, per delivered set: usage status, partner-reported usefulness, any
   learner decoding signal the partner observes (clearly marked as the partner's observation, not an
-  Elyos claim), and **post-delivery defects** (e.g., a slipped off-sequence word) with target **0**.
+  Hee-Lee Oss claim), and **post-delivery defects** (e.g., a slipped off-sequence word) with target **0**.
   Feeds PLAN.md success metrics.
 
 `maint-001`
@@ -315,9 +315,9 @@ Schema-valid Task JSON for the first M0 task. `verifiedNeed` is **false** (no pa
     "Any ambiguity in source rights is resolved conservatively: if the order's license is unclear, an openly-documented alternative is used and the decision is recorded"
   ],
   "resources": [
-    "C:/Users/jason/AppData/Local/Temp/claude/C--code-elyos/5eca0d44-6b8b-4c30-9696-37a524cb249a/scratchpad/plans/decodable-readers/PLAN.md",
-    "C:/code/elyos/packages/schema/src/schemas.ts",
-    "C:/code/elyos/docs/good-deed-definition.md",
+    "C:/Users/jason/AppData/Local/Temp/claude/C--code-hee-lee-oss/5eca0d44-6b8b-4c30-9696-37a524cb249a/scratchpad/plans/decodable-readers/PLAN.md",
+    "C:/code/hee-lee-oss/packages/schema/src/schemas.ts",
+    "C:/code/hee-lee-oss/docs/good-deed-definition.md",
     "Openly-documented English phonics scope-and-sequence reference (license to be recorded)"
   ],
   "output": "sequences/en/<id>.yaml plus a README documenting the sequence schema, source/license provenance, and the book-referencing convention (sequenceId + step)",

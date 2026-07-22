@@ -21,9 +21,9 @@
     "Any ambiguity in source rights is resolved conservatively: if the order's license is unclear, an openly-documented alternative is used and the decision is recorded"
   ],
   "resources": [
-    "C:/Users/jason/AppData/Local/Temp/claude/C--code-elyos/5eca0d44-6b8b-4c30-9696-37a524cb249a/scratchpad/plans/decodable-readers/PLAN.md",
-    "C:/code/elyos/packages/schema/src/schemas.ts",
-    "C:/code/elyos/docs/good-deed-definition.md",
+    "C:/Users/jason/AppData/Local/Temp/claude/C--code-hee-lee-oss/5eca0d44-6b8b-4c30-9696-37a524cb249a/scratchpad/plans/decodable-readers/PLAN.md",
+    "C:/code/hee-lee-oss/packages/schema/src/schemas.ts",
+    "C:/code/hee-lee-oss/docs/good-deed-definition.md",
     "Openly-documented English phonics scope-and-sequence reference (license to be recorded)"
   ],
   "output": "sequences/en/<id>.yaml plus a README documenting the sequence schema, source/license provenance, and the book-referencing convention (sequenceId + step)",
